@@ -1,0 +1,22 @@
+{
+    "type": "record",
+    "name": "Device",
+    "namespace": "com.mk.streamship.schema",
+    "fields": [
+        {
+            "name": "deviceId",
+            "type": "string"
+        },
+        {
+            "name": "value",
+            "type": "int"
+        },
+        {
+            "name": "date",
+            "type": {
+                "type": "long",
+                "logicalType": "local-timestamp-millis"
+            }
+        }
+    ]
+}
